@@ -1,0 +1,28 @@
+<mat-grid-list cols="12" rowHeight="50px">
+
+  <mat-toolbar>
+
+    <mat-grid-tile [colspan]="2">
+      <button mat-raised-button color="primary" (click)="fnRedireccion('list')">Listado de usuarios</button>
+    </mat-grid-tile>
+    <!-- <mat-grid-tile [colspan]="2">
+      <button mat-raised-button color="primary" (click)="fnRedireccion('form')">Formulario de usuarios</button>
+    </mat-grid-tile> -->
+
+    <mat-grid-tile [colspan]="10">
+      <img style="width: 20%" mat-card-image src="/assets/logo.png" alt="Photo of a Shiba Inu">
+    </mat-grid-tile>
+
+  </mat-toolbar>
+
+</mat-grid-list>
+
+
+
+
+<div style="margin: 15px 0px 15px 0px">
+  <mat-divider></mat-divider>
+</div>
+
+
+<router-outlet></router-outlet>
